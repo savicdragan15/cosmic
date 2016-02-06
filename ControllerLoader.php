@@ -2,7 +2,7 @@
 /**
  * 
  */
-class ControllerLoader{
+class ControllerLoader{ 
      public static function loadController($cont,$method){
         $controller_object = new $cont();
         if (!is_subclass_of($controller_object, 'Controller')){
